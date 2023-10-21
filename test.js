@@ -81,40 +81,52 @@
 // test.js
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Make the initial box draggable
+
   makeDraggable(document.getElementById("mydiv"));
 
   var addButton = document.getElementById("add");
   var frame = document.querySelector(".frame");
 
   addButton.addEventListener("click", function() {
-      // Create a new container div
-      var containerDiv = document.createElement("div");
-      containerDiv.classList.add("draggable"); // Add a class for styling and identification
-      containerDiv.style.position = 'absolute';  // Set position to absolute for free positioning
 
-      // Generate non-overlapping random positions
-      var position = getRandomPosition();
-      while (isOverlapping(position)) {
-          position = getRandomPosition();
-      }
+    var containerDiv = document.createElement("div");
+    containerDiv.classList.add("draggable"); 
+    containerDiv.style.position = 'absolute';  
 
-      containerDiv.style.top = position.top + 'px';
-      containerDiv.style.left = position.left + 'px';
 
-      // Create a new text box
-      var newTextBox = document.createElement("p");
-      newTextBox.textContent = "New Text Box";
+    var position = getRandomPosition();
+    while (isOverlapping(position)) {
+        position = getRandomPosition();
+    }
 
-      // Append the text box to the container div
-      containerDiv.appendChild(newTextBox);
+    containerDiv.style.top = position.top + 'px';
+    containerDiv.style.left = position.left + 'px';
 
-      // Append the container div to the content div
-      frame.appendChild(containerDiv);
 
-      // Make the new box draggable
-      makeDraggable(containerDiv);
-  });
+    var contentContainer = document.createElement("div");
+    contentContainer.classList.add("content-container");
+
+
+    var title = document.createElement("h2");
+    title.textContent = "Button Title";
+
+    var description = document.createElement("p");
+    description.textContent = "This is a custom button with a nice background and description.";
+
+  
+    contentContainer.appendChild(title);
+    contentContainer.appendChild(description);
+
+ 
+    containerDiv.appendChild(contentContainer);
+
+
+    frame.appendChild(containerDiv);
+
+
+    makeDraggable(containerDiv);
+});
+
 
   // Helper function to make an element draggable
   function makeDraggable(element) {

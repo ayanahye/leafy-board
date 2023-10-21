@@ -78,7 +78,6 @@ a {
     width: 10px;
 }
 
-<<<<<<< HEAD
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -91,6 +90,11 @@ a {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+
+    color: white; 
+    border: 2px solid green; 
+    border-radius: 50%; 
+    padding: 10px; 
   
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
@@ -103,11 +107,9 @@ a {
     /* Support for IE. */
     font-feature-settings: 'liga';
   }
-=======
 @media only screen and (max-width: 800px) {
     .title, .subtitle {
         text-align: center;
         
     }
 }
->>>>>>> 2f8f67353045c25516375bd3aec2d4e4e5516fa2

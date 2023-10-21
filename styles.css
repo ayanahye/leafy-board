@@ -78,6 +78,17 @@ a {
     width: 10px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#logo {
+    font-size: 2em; /* Adjust the size as needed */
+    position: relative;
+}
+
+=======
+<<<<<<< HEAD
+>>>>>>> 7ec5b3308e10fc00396eced2e66433562a0f8233
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -107,6 +118,11 @@ a {
     /* Support for IE. */
     font-feature-settings: 'liga';
   }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c63cc04a15548def88437b463ef99c2df825694b
+>>>>>>> 7ec5b3308e10fc00396eced2e66433562a0f8233
 @media only screen and (max-width: 800px) {
     .title, .subtitle {
         text-align: center;

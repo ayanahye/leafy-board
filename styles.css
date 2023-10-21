@@ -45,3 +45,8 @@ body, html {
     height: 700px;
     width: 90%;
 }
+
+.subtitle{
+    color: white;
+    font-size: 30px;
+}

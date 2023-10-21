@@ -1,49 +1,46 @@
 document.addEventListener("DOMContentLoaded", function() {
+    makeDraggable(document.getElementById("mydiv"));
+    var addButton = document.getElementById("add");
+    var frame = document.querySelector(".frame");
 
-  makeDraggable(document.getElementById("mydiv"));
+    addButton.addEventListener("click", function() {
+        var title = prompt("Enter the title for the new element:");
+        var description = prompt("Enter the description for the new element:");
 
-  var addButton = document.getElementById("add");
-  var frame = document.querySelector(".frame");
+        if (title === null || title.trim() === '' || description === null || description.trim() === '') {
+            return;
+        }
 
-  addButton.addEventListener("click", function() {
+        var containerDiv = document.createElement("div");
+        containerDiv.classList.add("draggable");
+        containerDiv.style.position = 'absolute';
 
-    var containerDiv = document.createElement("div");
-    containerDiv.classList.add("draggable"); 
-    containerDiv.style.position = 'absolute';  
+        var position = getRandomPosition();
+        while (isOverlapping(position)) {
+            position = getRandomPosition();
+        }
 
+        containerDiv.style.top = position.top + 'px';
+        containerDiv.style.left = position.left + 'px';
 
-    var position = getRandomPosition();
-    while (isOverlapping(position)) {
-        position = getRandomPosition();
-    }
+        var contentContainer = document.createElement("div");
+        contentContainer.classList.add("content-container");
 
-    containerDiv.style.top = position.top + 'px';
-    containerDiv.style.left = position.left + 'px';
+        var titleElement = document.createElement("h2");
+        titleElement.textContent = title;
 
+        var descriptionElement = document.createElement("p");
+        descriptionElement.textContent = description;
 
-    var contentContainer = document.createElement("div");
-    contentContainer.classList.add("content-container");
+        contentContainer.appendChild(titleElement);
+        contentContainer.appendChild(descriptionElement);
 
+        containerDiv.appendChild(contentContainer);
 
-    var title = document.createElement("h2");
-    title.textContent = "Button Title";
+        frame.appendChild(containerDiv);
 
-    var description = document.createElement("p");
-    description.textContent = "This is a custom button with a nice background and description.";
-
-  
-    contentContainer.appendChild(title);
-    contentContainer.appendChild(description);
-
- 
-    containerDiv.appendChild(contentContainer);
-
-
-    frame.appendChild(containerDiv);
-
-
-    makeDraggable(containerDiv);
-});
+        makeDraggable(containerDiv);
+    });
 
 
   function makeDraggable(element) {

@@ -71,6 +71,7 @@ a {
 .addboard {
     color: white;
     border: 2px solid black;
+    border: none;
 }
 
 .logo {
@@ -79,18 +80,32 @@ a {
 }
 
 
+#logo {
+    font-size: 2em; /* Adjust the size as needed */
+    position: relative;
+    bottom: 7px;
+    left: 7px;
+    }
+
+=======
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 32px;  /* Preferred icon size */
     display: inline-block;
-    line-height: 1;
+    line-height: 32px;
     text-transform: none;
     letter-spacing: normal;
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+
+    color: white; 
+    border: 2px solid green; 
+    border-radius: 50%; 
+    padding: 10px; 
   
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
@@ -103,3 +118,11 @@ a {
     /* Support for IE. */
     font-feature-settings: 'liga';
   }
+=======
+@media only screen and (max-width: 800px) {
+    .title, .subtitle {
+        text-align: center;
+        
+    }
+}
+>>>>>>> 2f8f67353045c25516375bd3aec2d4e4e5516fa2

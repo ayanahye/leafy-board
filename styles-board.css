@@ -107,12 +107,3 @@ html, body {
     bottom: 10px;
     right: 40px;
 }
-
-#mydiv {
-    z-index: 9;
-}
-
-#mydivheader {
-    cursor: move;
-    z-index: 10;
-}

@@ -7,18 +7,6 @@ add.addEventListener("click", function() {
 
 let background = document.getElementById("change background");
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Change Background Color</title>
-</head>
-<body>
-    <button id="changeColorButton">Change Color</button>
-
-    <script src="your_script.js"></script>
-</body>
-</html>
-
 function newcolour(){
     var symbols,colour;
     symbols = "0123456789ABCDEF"
@@ -43,8 +31,3 @@ nameForm.addEventListener("submit", function (e) {
     output.textContent = `${name}'s Leafy Board:`;
 });
 
-
-
-
-
->>>>>>> 25f3fc5b4e2e1b9b211549502d5cc79b223e870c

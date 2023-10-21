@@ -17,4 +17,5 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: green;
+    flex-direction: column;
 }

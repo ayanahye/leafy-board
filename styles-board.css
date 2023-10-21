@@ -1,0 +1,20 @@
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.frame {
+    height: 700px;
+    width: 90%;
+}
+
+#title{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+

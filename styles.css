@@ -25,17 +25,21 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("images/background1.jpeg");
+    background: url("images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     flex-direction: column;
     font-family: 'EB Garamond', serif;
     font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Young Serif', serif;
+
 }
 
 .title {
     color: rgb(255, 255, 255);
     font-size: 70px;
     margin: 0;
+    text-shadow: 2px 2px 5px green;
 }
 
 

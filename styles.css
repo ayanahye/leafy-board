@@ -36,4 +36,13 @@ body, html {
 
 .content {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    background-color: red;
+    height: 700px;
+    width: 90%;
 }

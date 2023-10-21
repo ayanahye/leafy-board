@@ -107,10 +107,7 @@ html, body {
     bottom: 10px;
     right: 40px;
 }
-/* 
+
 #colorPicker {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-} */
+    background-color: red;
+}

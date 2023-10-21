@@ -66,6 +66,7 @@ a {
     color: green;
     position: relative;
     bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .addboard {

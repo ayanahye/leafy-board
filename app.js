@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 add.addEventListener("click", function() {
     add.textContent = "add"
 })

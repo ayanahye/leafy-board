@@ -37,6 +37,20 @@ body, html {
     color: white;
 }
 
-footer {
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.frame {
+    background-color: red;
+    height: 700px;
+    width: 90%;
+}
+
+.subtitle{
+    color: white;
+    font-size: 30px;
 }

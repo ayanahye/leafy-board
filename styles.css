@@ -87,6 +87,10 @@ a {
     left: 7px;
     }
 
+.md-48 {
+    font-size: 48px !important;
+    }
+    
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -123,6 +127,4 @@ a {
     }
 }
 
-.md-48 {
-    font-size: 48px !important;
-  }
+

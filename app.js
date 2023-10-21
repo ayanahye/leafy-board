@@ -7,6 +7,18 @@ add.addEventListener("click", function() {
 
 let background = document.getElementById("change background");
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+    <button id="changeColorButton">Change Color</button>
+
+    <script src="your_script.js"></script>
+</body>
+</html>
+
 function newcolour(){
     var symbols,colour;
     symbols = "0123456789ABCDEF"
@@ -17,7 +29,11 @@ function newcolour(){
     }
     document.content.background = colour;
 }
-=======
+
+var changeColorButton = document.getElementById("changeColorButton");
+changeColorButton.addEventListener("click", newcolour);
+
+
 const nameForm = document.getElementById("nameForm");
 const output = document.getElementById("output");
 

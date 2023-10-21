@@ -101,3 +101,17 @@ header{
     height: 80px;
 }
 
+.material-symbols-outlined {
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.bottom-buttons{
+    position: relative;
+    bottom: 10px;
+    right: 40px;
+}

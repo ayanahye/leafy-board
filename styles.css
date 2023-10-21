@@ -40,19 +40,15 @@ a {
     font-size: 70px;
     margin: 0;
     text-shadow: 2px 2px 5px green;
+    position: relative;
+    bottom: 100px;
 }
-
 
 .content {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.subtitle {
-    text-shadow: 2px 2px 5px green;
-    color: green;
 }
 
 .frame {
@@ -66,6 +62,10 @@ a {
     font-size: 30px;
     font-weight: bold;
     text-shadow: 2px 2px 5px white;
+    text-shadow: 2px 2px 5px green;
+    color: green;
+    position: relative;
+    bottom: 100px;
 }
 
 .addboard {
@@ -99,7 +99,11 @@ a {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
+    color: green;
+
+    position: relative;
+    bottom: 100px;
+
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */

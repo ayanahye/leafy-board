@@ -1,31 +1,50 @@
 document.addEventListener("DOMContentLoaded", function() {
+
   makeDraggable(document.getElementById("mydiv"));
 
   var addButton = document.getElementById("add");
   var frame = document.querySelector(".frame");
 
   addButton.addEventListener("click", function() {
-      var containerDiv = document.createElement("div");
-      containerDiv.classList.add("draggable"); 
-      containerDiv.style.position = 'absolute';  
 
-      var position = getRandomPosition();
-      while (isOverlapping(position)) {
-          position = getRandomPosition();
-      }
+    var containerDiv = document.createElement("div");
+    containerDiv.classList.add("draggable"); 
+    containerDiv.style.position = 'absolute';  
 
-      containerDiv.style.top = position.top + 'px';
-      containerDiv.style.left = position.left + 'px';
 
-      var newTextBox = document.createElement("p");
-      newTextBox.textContent = "New Text Box";
+    var position = getRandomPosition();
+    while (isOverlapping(position)) {
+        position = getRandomPosition();
+    }
 
-      containerDiv.appendChild(newTextBox);
+    containerDiv.style.top = position.top + 'px';
+    containerDiv.style.left = position.left + 'px';
 
-      frame.appendChild(containerDiv);
 
-      makeDraggable(containerDiv);
-  });
+    var contentContainer = document.createElement("div");
+    contentContainer.classList.add("content-container");
+
+
+    var title = document.createElement("h2");
+    title.textContent = "Button Title";
+
+    var description = document.createElement("p");
+    description.textContent = "This is a custom button with a nice background and description.";
+
+  
+    contentContainer.appendChild(title);
+    contentContainer.appendChild(description);
+
+ 
+    containerDiv.appendChild(contentContainer);
+
+
+    frame.appendChild(containerDiv);
+
+
+    makeDraggable(containerDiv);
+});
+
 
   function makeDraggable(element) {
       var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

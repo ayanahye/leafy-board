@@ -1,12 +1,18 @@
+html, body {
+    margin: 0;
+    background-color: green;
+}
+
 .content {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: block;
     font-family: 'EB Garamond', serif;
     font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Young Serif', serif;
+    background-color: green;
+    margin: 0;
 }
 
 .tree {
@@ -44,10 +50,16 @@ header{
     background-color: rgb(70, 121, 62);
     color: white;
     width: 100%;
-    
- 
+    font-size: 12px;
+    border-radius: 20px;
 }
 
-
+.back {
+    padding: 5px;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
 
 

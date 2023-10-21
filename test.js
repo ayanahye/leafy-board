@@ -41,3 +41,26 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+// Get the "add" button element by its id
+const addButton = document.getElementById("add");
+
+// Add a click event listener to the "add" button
+addButton.addEventListener("click", function() {
+    // Get the element you want to duplicate by its id
+    const originalDiv = document.getElementById("mydiv");
+
+    // Clone the element
+    const clonedDiv = originalDiv.cloneNode(true);
+
+    // Generate a new ID for the cloned element (optional)
+    const newId = "mydiv" + Date.now();
+    clonedDiv.id = newId;
+
+    // Modify any classes or other attributes if needed
+    // For example, if you want to add a class to the cloned div:
+    clonedDiv.classList.add("new-class");
+
+    // Append the cloned element to the parent
+    originalDiv.parentNode.appendChild(clonedDiv);
+});

@@ -27,10 +27,14 @@ body, html {
     font-family: 'Young Serif', serif;
 }
 
-.title{
+.title {
     color: rgb(255, 255, 255);
     font-size: 70px;
     margin: 0;
+}
+
+.created {
+    color: white;
 }
 
 .content {
@@ -44,4 +48,9 @@ body, html {
     background-color: red;
     height: 700px;
     width: 90%;
+}
+
+.subtitle{
+    color: white;
+    font-size: 30px;
 }

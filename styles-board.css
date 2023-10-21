@@ -61,6 +61,11 @@ header{
     text-decoration: none;
     color: white;
     font-size: 20px;
+
+}
+
+.text {
+    margin: 10px 0 10px 0;
 }
 
 

@@ -7,8 +7,9 @@ body, html {
     justify-content: space-between;
     padding: 20px 10px 20px 10px;
     background-color: greenyellow;
-    
 }
+
+/* this is a test comment */
 
 .container {
     display: flex;
@@ -17,6 +18,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: green;
+    flex-direction: column;
 }
 
 .title{

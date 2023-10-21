@@ -42,9 +42,3 @@ nameForm.addEventListener("submit", function (e) {
     const name = document.getElementById("name").value;
     output.textContent = `${name}'s Leafy Board:`;
 });
-
-
-
-
-
->>>>>>> 25f3fc5b4e2e1b9b211549502d5cc79b223e870c

@@ -4,6 +4,7 @@
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
     text-align: center;
+    
   }
   
   #mydivheader {
@@ -13,3 +14,113 @@
     background-color: #2196F3;
     color: #fff;
   }
+
+  html, body {
+    margin: 0;
+    background-color: rgb(158, 180, 230);
+    font-family: 'EB Garamond', serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Young Serif', serif;
+}
+
+.content {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Young Serif', serif;
+    background-color:rgb(158, 180, 230);
+    margin: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
+.tree {
+    width: 100%;
+    height: 600px;
+}
+
+.goalstext {
+    text-align: center;
+}
+
+.frame {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.back {
+    padding: 5px;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+.text {
+    margin: 10px 0 10px 0;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Young Serif', serif;
+}
+
+.bottom-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.image-leaf {
+    width: 300px;
+    height: 300px;
+}
+
+.textwleaf {
+    background: url("images/orange-leaf.png"); 
+    background-size: cover; 
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textonleaf {
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.bottom-buttons{
+    position: relative;
+    bottom: 10px;
+    right: 40px;
+}

@@ -8,13 +8,28 @@
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <div id="mydiv">
-        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-        <div id="mydivheader">Click here to move</div>
-        <p>Move</p>
-        <p>this</p>
-        <p>DIV</p>
-      </div>
+    <nav class="nav2">
+        <a href="home.html" class="back"><span class="material-symbols-outlined">arrow_back</span></a>
+        <h3 class="goalstext">Add your 2024 goals using the '+' button</h3>
+    </nav>
+    <div class="content" id = "background">
+        <div class="frame">
+            <div id="mydiv">
+                <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                <div id="mydivheader">Click here to move</div>
+                <p>Move</p>
+                <p>this</p>
+                <p>DIV</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-buttons">
+        <span class="material-symbols-outlined" id="add">library_add</span>
+        <span class="material-symbols-outlined" id="delete">delete</span>
+        <span class="material-symbols-outlined" id="edit">edit_note</span>
+    </div>
+    <input type="color" id="colorPicker" style="display: none;">
+
 <script src="test.js"></script>
 </body>
 </html>

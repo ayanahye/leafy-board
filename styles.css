@@ -40,19 +40,15 @@ a {
     font-size: 70px;
     margin: 0;
     text-shadow: 2px 2px 5px green;
+    position: relative;
+    bottom: 100px;
 }
-
 
 .content {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.subtitle {
-    text-shadow: 2px 2px 5px green;
-    color: green;
 }
 
 .frame {
@@ -66,6 +62,10 @@ a {
     font-size: 30px;
     font-weight: bold;
     text-shadow: 2px 2px 5px white;
+    text-shadow: 2px 2px 5px green;
+    color: green;
+    position: relative;
+    bottom: 100px;
 }
 
 .addboard {
@@ -87,8 +87,6 @@ a {
     left: 7px;
     }
 
-=======
-
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -103,7 +101,9 @@ a {
     direction: ltr;
     color: green;
 
-  
+    position: relative;
+    bottom: 100px;
+
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
@@ -115,11 +115,9 @@ a {
     /* Support for IE. */
     font-feature-settings: 'liga';
   }
-=======
 @media only screen and (max-width: 800px) {
     .title, .subtitle {
         text-align: center;
         
     }
 }
->>>>>>> 2f8f67353045c25516375bd3aec2d4e4e5516fa2

@@ -96,6 +96,10 @@ header{
     height: 50px;
 }
 
+.image-leaf {
+    width: 80px;
+    height: 80px;
+}
 .material-symbols-outlined {
     cursor: pointer;
     font-variation-settings:

@@ -1,5 +1,8 @@
 body, html {
     margin: 0;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Young Serif', serif;
 }
 
 .navbar {
@@ -19,14 +22,19 @@ body, html {
     align-items: center;
     background-color: green;
     flex-direction: column;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Young Serif', serif;
 }
 
-.title{
-    color: darkgreen;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
+.title {
+    color: rgb(255, 255, 255);
     font-size: 70px;
+    margin: 0;
+}
+
+.created {
+    color: white;
 }
 
 .content {
@@ -40,4 +48,9 @@ body, html {
     background-color: red;
     height: 700px;
     width: 90%;
+}
+
+.subtitle{
+    color: white;
+    font-size: 30px;
 }

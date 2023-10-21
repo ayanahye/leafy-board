@@ -1,18 +1,50 @@
-let add = document.getElementById("add");
-const textonleaf = document.querySelector('.textonleaf');
 
-textonleaf.setAttribute('draggable', 'true');
+<<<<<<< HEAD
+add.addEventListener("click", function() {
+    add.textContent = "add"
+})
 
-textonleaf.addEventListener('dragstart', function (ev) {
-    ev.dataTransfer.setData('text', ev.target.id);
+
+let background = document.getElementById("change background");
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+    <button id="changeColorButton">Change Color</button>
+
+    <script src="your_script.js"></script>
+</body>
+</html>
+
+function newcolour(){
+    var symbols,colour;
+    symbols = "0123456789ABCDEF"
+    colour = "#";
+    for(var i = 0; i<6; i++){
+        colour = colour + symbols[Math.floor(Math.random() * 16)];
+    
+    }
+    document.content.background = colour;
+}
+
+var changeColorButton = document.getElementById("changeColorButton");
+changeColorButton.addEventListener("click", newcolour);
+
+
+const nameForm = document.getElementById("nameForm");
+const output = document.getElementById("output");
+
+nameForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    output.textContent = `${name}'s Leafy Board:`;
 });
 
-add.addEventListener('dragover', function (ev) {
-    ev.preventDefault();
-});
 
-add.addEventListener('drop', function (ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData('text');
-    ev.target.appendChild(document.getElementById(data));
-});
+
+
+
+>>>>>>> 25f3fc5b4e2e1b9b211549502d5cc79b223e870c

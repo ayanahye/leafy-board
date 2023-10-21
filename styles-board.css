@@ -1,71 +1,47 @@
-html, body {
-    margin: 0;
-    background-color: rgb(158, 180, 230);
+
+body {
+    height: 100%;
 }
 
 .content {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'EB Garamond', serif;
-    font-family: 'Pixelify Sans', sans-serif;
-    font-family: 'Young Serif', serif;
-    background-color:rgb(158, 180, 230);
-    margin: 0;
+    height: 80vh;
+    background-color: green;
 }
 
-.tree {
-    width: 100%;
-    height: 600px;
-}
-
-header{
-    background-color: rgb(92, 140, 206);
-    color: white;
+.frame {
+    
+    max-width: 500px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 20px;
-    height: 50px;
-    width: 100%;
-    border-radius: 20px;
+}
+
+.content-wrapper {
+    /* Apply flex layout to the content-wrapper to stack children vertically */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top-text {
+    
+    padding: 20px; 
+}
+
+.bottom-buttons {
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
     align-items: center;
+    
+    height: 50px;
+
 }
 
 .goalstext {
     text-align: center;
 }
-
-.frame {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.tools {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(92, 140, 206);
-    color: white;
-    width: 100%;
-    font-size: 12px;
-    border-radius: 20px;
-    height: 50px;
-}
-
-.back {
-    padding: 5px;
-    margin: 10px 0 0 0;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-
-}
-
-.text {
-    margin: 10px 0 10px 0;
-}
-
-

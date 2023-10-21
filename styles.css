@@ -101,8 +101,6 @@ a {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-    color: green;
-
   
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;

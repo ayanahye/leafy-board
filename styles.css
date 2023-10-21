@@ -12,6 +12,11 @@ body, html {
     background-color: greenyellow;
 }
 
+a {
+    text-decoration: none;
+    color: green;
+}
+
 /* this is a test comment */
 
 .container {
@@ -33,9 +38,6 @@ body, html {
     margin: 0;
 }
 
-.created {
-    color: white;
-}
 
 .content {
     height: 100vh;

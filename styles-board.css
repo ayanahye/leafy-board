@@ -109,3 +109,9 @@ header{
     'GRAD' 0,
     'opsz' 24
 }
+
+.bottom-buttons{
+    position: relative;
+    bottom: 10px;
+    right: 40px;
+}

@@ -11,6 +11,30 @@ body {
     background-color: green;
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
 .frame {
     
     max-width: 500px;

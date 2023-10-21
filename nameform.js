@@ -1,10 +1,6 @@
-
-const nameForm = document.getElementById("nameForm");
-const output = document.getElementById("output");
-
-nameForm.addEventListener("submit", function (e) {
+document.getElementById("nameForm").addEventListener("submit", function (e) {
     e.preventDefault();
     const name = document.getElementById("name").value;
-    output.textContent = `${name}'s Leafy Board:`;
-    window.location.href = "home.html";
+    // Redirect to home.html with the name parameter in the URL
+    window.location.href = `home.html?name=${name}`;
 });

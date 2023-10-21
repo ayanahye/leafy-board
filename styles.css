@@ -50,6 +50,11 @@ a {
     align-items: center;
 }
 
+.subtitle {
+    text-shadow: 2px 2px 5px green;
+    color: green;
+}
+
 .frame {
     background-color: red;
     height: 700px;
@@ -57,8 +62,10 @@ a {
 }
 
 .subtitle{
-    color: white;
+    color: green;
     font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px white;
 }
 
 .addboard {

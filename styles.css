@@ -125,11 +125,6 @@ a {
     transform: scale(3);
   }
 
-  .tools {
-    display: flex;
-    flex: 1;
-  }
-
   .tool-icon {
     transform: scale(1.2)
   }

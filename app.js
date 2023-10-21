@@ -1,2 +1,5 @@
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-console.log("Hello World")
+let add = document.getElementById("add");
+
+add.addEventListener("click", function() {
+    add.textContent = "haha"
+})

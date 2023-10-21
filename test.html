@@ -23,13 +23,26 @@
         <div class="frame">
             <div id="mydiv">
                 <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-                <div id="mydivheader">Click here to move</div>
-                <p>Move</p>
-                <p>this</p>
-                <p>DIV</p>
+                <div id="mydivheader">Title</div>
+                <p>Write goal here</p>
             </div>
         </div>
     </div>
+
+    <div class="content" id="background">
+        <div class="frame">
+            <div id="mydiv">
+                <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                <div id="mydivheader">
+                    <input type="text" id="titleInput" placeholder="Title">
+                </div>
+                <div id="goalDiv">
+                    <textarea id="goalInput" placeholder="Write goal here"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="bottom-buttons">
         <span class="material-symbols-outlined" id="add">library_add</span>
         <span class="material-symbols-outlined" id="delete">delete</span>
@@ -38,5 +51,6 @@
     <input type="color" id="colorPicker" style="display: none;">
 
 <script src="test.js"></script>
+<script src="goalform.js"></script>
 </body>
 </html>

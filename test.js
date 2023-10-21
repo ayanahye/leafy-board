@@ -1,6 +1,41 @@
 // Make the DIV element draggable:
 dragElement(document.getElementById("mydiv"));
 
+const addButton = document.getElementById("add");
+
+addButton.addEventListener("click", function() {
+    const originalDiv = document.getElementById("mydiv");
+
+    // Clone the element
+    const clonedDiv = originalDiv.cloneNode(true);
+
+    // Generate a new ID for the cloned element
+    const newId = "mydiv" + Date.now();
+    clonedDiv.id = newId;
+
+
+    // Modify any classes or other attributes if needed
+    clonedDiv.classList.add("new-class");
+
+    // Append the cloned element to the parent
+    originalDiv.parentNode.appendChild(clonedDiv);
+
+    // Include CSS rules to match the IDs and classes
+    const style = document.createElement("style");
+    style.innerHTML = `
+        #${newId} {
+            /* Add your styles here */
+        }
+        #${newId} .new-class {
+            /* Add your styles for the new class here */
+        }
+    `;
+
+    // Append the CSS rules to the head of the document
+    document.head.appendChild(style);
+    dragElement(document.getElementById(clonedDiv.id));
+});
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -42,25 +77,4 @@ function dragElement(elmnt) {
   }
 }
 
-// Get the "add" button element by its id
-const addButton = document.getElementById("add");
 
-// Add a click event listener to the "add" button
-addButton.addEventListener("click", function() {
-    // Get the element you want to duplicate by its id
-    const originalDiv = document.getElementById("mydiv");
-
-    // Clone the element
-    const clonedDiv = originalDiv.cloneNode(true);
-
-    // Generate a new ID for the cloned element (optional)
-    const newId = "mydiv" + Date.now();
-    clonedDiv.id = newId;
-
-    // Modify any classes or other attributes if needed
-    // For example, if you want to add a class to the cloned div:
-    clonedDiv.classList.add("new-class");
-
-    // Append the cloned element to the parent
-    originalDiv.parentNode.appendChild(clonedDiv);
-});

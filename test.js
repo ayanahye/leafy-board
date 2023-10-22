@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
+        var deleteButton = document.createElement("button");
+        deleteButton.classList.add("material-icons", "delete-button");
+        deleteButton.textContent = "cancel";
+        deleteButton.style.position = "relative"
+        deleteButton.style.margin = 0;
+
         var containerDiv = document.createElement("div");
         containerDiv.classList.add("draggable");
         containerDiv.style.position = 'absolute';
@@ -26,13 +32,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var contentContainer = document.createElement("div");
         contentContainer.classList.add("content-container");
-
-        var deleteButton = document.createElement("button");
-        deleteButton.classList.add("material-icons", "delete-button");
-        deleteButton.textContent = "cancel";
+        
         deleteButton.addEventListener("click", function() {
             frame.removeChild(containerDiv);
         });
+
+
 
         var titleElement = document.createElement("h2");
         titleElement.textContent = title;

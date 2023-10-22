@@ -144,11 +144,12 @@
 }
 
 .delete-button {
+    display: inline-block;
     position: absolute;
-    top: 0px;
-    right: 10px;
+    top: 0;
+    left: 0;
     z-index: 1;
-    margin: 18px;
+    margin: 10px;
     transform: scale(0.8);
 }
 

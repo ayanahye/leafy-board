@@ -1,9 +1,6 @@
 #mydiv {
     position: absolute;
     z-index: 9;
-
-
-    
   }
   
   #mydivheader {
@@ -21,6 +18,12 @@
     font-family: 'EB Garamond', serif;
     font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Young Serif', serif;
+
+}
+
+#ct2 {
+    width: 100vw;
+    margin: 0;
 }
 
 .content {

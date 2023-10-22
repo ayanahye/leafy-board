@@ -143,23 +143,13 @@
     right: 40px;
 }
 
-.nav2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
+.delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    margin: 18px;
+    transform: scale(0.8);
 }
 
-.goalstext {
-    margin-left: auto;
-    margin-right: auto;
-    color: rgb(50, 79, 210);
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px white;
-    text-shadow: 2px 2px 5px rgb(243, 246, 249);
-    color: rgb(50, 79, 210);
-
-
-}
 

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     makeDraggable(document.getElementById("mydiv"));
+
     var addButton = document.getElementById("add");
     var frame = document.querySelector(".frame");
 
@@ -26,6 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
         var contentContainer = document.createElement("div");
         contentContainer.classList.add("content-container");
 
+        var deleteButton = document.createElement("button");
+        deleteButton.classList.add("material-icons", "delete-button");
+        deleteButton.textContent = "cancel";
+        deleteButton.addEventListener("click", function() {
+            frame.removeChild(containerDiv);
+        });
+
         var titleElement = document.createElement("h2");
         titleElement.textContent = title;
 
@@ -34,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         contentContainer.appendChild(titleElement);
         contentContainer.appendChild(descriptionElement);
+        contentContainer.appendChild(deleteButton); // Add the delete button to the content container
 
         containerDiv.appendChild(contentContainer);
 
@@ -41,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         makeDraggable(containerDiv);
     });
+
 
 
   function makeDraggable(element) {
@@ -100,3 +110,16 @@ document.addEventListener("DOMContentLoaded", function() {
       return false;
   }
 });
+
+const deleteButton = document.getElementById('delete');
+        
+// Get the parent div to be deleted
+const mydiv = document.getElementById('mydiv');
+
+// Function to delete the mydiv element
+function deleteMyDiv() {
+    mydiv.remove();
+}
+
+// Add a click event listener to the delete button
+deleteButton.addEventListener('click', deleteMyDiv);

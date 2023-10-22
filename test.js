@@ -6,11 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var frame = document.querySelector(".frame");
 
   addButton.addEventListener("click", function() {
-
     var containerDiv = document.createElement("div");
-    containerDiv.classList.add("draggable"); 
-    containerDiv.style.position = 'absolute';  
-
+    containerDiv.classList.add("draggable");
+    containerDiv.style.position = 'absolute';
 
     var position = getRandomPosition();
     while (isOverlapping(position)) {
@@ -20,10 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
     containerDiv.style.top = position.top + 'px';
     containerDiv.style.left = position.left + 'px';
 
-
     var contentContainer = document.createElement("div");
     contentContainer.classList.add("content-container");
 
+    var deleteButton = document.createElement("button");
+    deleteButton.classList.add("material-icons", "delete-button");
+    deleteButton.textContent = "cancel";
+    deleteButton.addEventListener("click", function() {
+        frame.removeChild(containerDiv);
+    });
 
     var title = document.createElement("h2");
     title.textContent = "Button Title";
@@ -31,19 +34,17 @@ document.addEventListener("DOMContentLoaded", function() {
     var description = document.createElement("p");
     description.textContent = "This is a custom button with a nice background and description.";
 
-  
+    contentContainer.appendChild(deleteButton);
     contentContainer.appendChild(title);
     contentContainer.appendChild(description);
 
- 
     containerDiv.appendChild(contentContainer);
-
 
     frame.appendChild(containerDiv);
 
-
     makeDraggable(containerDiv);
 });
+
 
 
   function makeDraggable(element) {
@@ -103,3 +104,16 @@ document.addEventListener("DOMContentLoaded", function() {
       return false;
   }
 });
+
+const deleteButton = document.getElementById('delete');
+        
+// Get the parent div to be deleted
+const mydiv = document.getElementById('mydiv');
+
+// Function to delete the mydiv element
+function deleteMyDiv() {
+    mydiv.remove();
+}
+
+// Add a click event listener to the delete button
+deleteButton.addEventListener('click', deleteMyDiv);

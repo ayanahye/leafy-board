@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         var chosenColor = event.target.value;
 
         // Set the background color of the frame
-        document.querySelector(".frame").style.backgroundColor = chosenColor;
+        document.querySelector(".color-overlay").style.backgroundColor = chosenColor;
     });
 });

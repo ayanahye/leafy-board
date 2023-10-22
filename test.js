@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
         var containerDiv = document.createElement("div");
         containerDiv.classList.add("draggable");
         containerDiv.style.position = 'absolute';
+        containerDiv.style.background = 'blue';
+        
+        containerDiv.style.display = "flex";
 
         var position = getRandomPosition();
         while (isOverlapping(position)) {
@@ -42,8 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var titleElement = document.createElement("h2");
         titleElement.textContent = title;
 
+        titleElement.style.fontSize = "28px"
+        titleElement.style.color = "white";
+
         var descriptionElement = document.createElement("p");
         descriptionElement.textContent = description;
+
+        descriptionElement.style.fontSize = "20px"
+        descriptionElement.style.color = "white";
 
         contentContainer.appendChild(titleElement);
         contentContainer.appendChild(descriptionElement);

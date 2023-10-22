@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         
         containerDiv.style.display = "flex";
-        containerDiv.style.padding = "10px 0 0 10px"
+        containerDiv.style.padding = "10px 10px 0 10px"
 
         var position = getRandomPosition();
         while (isOverlapping(position)) {

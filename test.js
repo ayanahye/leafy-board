@@ -1,49 +1,55 @@
 document.addEventListener("DOMContentLoaded", function() {
+    makeDraggable(document.getElementById("mydiv"));
 
-  makeDraggable(document.getElementById("mydiv"));
+    var addButton = document.getElementById("add");
+    var frame = document.querySelector(".frame");
 
-  var addButton = document.getElementById("add");
-  var frame = document.querySelector(".frame");
+    addButton.addEventListener("click", function() {
+        var title = prompt("Enter the title for the new element:");
+        var description = prompt("Enter the description for the new element:");
 
-  addButton.addEventListener("click", function() {
-    var containerDiv = document.createElement("div");
-    containerDiv.classList.add("draggable");
-    containerDiv.style.position = 'absolute';
+        if (title === null || title.trim() === '' || description === null || description.trim() === '') {
+            return;
+        }
 
-    var position = getRandomPosition();
-    while (isOverlapping(position)) {
-        position = getRandomPosition();
-    }
+        var containerDiv = document.createElement("div");
+        containerDiv.classList.add("draggable");
+        containerDiv.style.position = 'absolute';
 
-    containerDiv.style.top = position.top + 'px';
-    containerDiv.style.left = position.left + 'px';
+        var position = getRandomPosition();
+        while (isOverlapping(position)) {
+            position = getRandomPosition();
+        }
 
-    var contentContainer = document.createElement("div");
-    contentContainer.classList.add("content-container");
+        containerDiv.style.top = position.top + 'px';
+        containerDiv.style.left = position.left + 'px';
 
-    var deleteButton = document.createElement("button");
-    deleteButton.classList.add("material-icons", "delete-button");
-    deleteButton.textContent = "cancel";
-    deleteButton.addEventListener("click", function() {
-        frame.removeChild(containerDiv);
+        var contentContainer = document.createElement("div");
+        contentContainer.classList.add("content-container");
+
+        var deleteButton = document.createElement("button");
+        deleteButton.classList.add("material-icons", "delete-button");
+        deleteButton.textContent = "cancel";
+        deleteButton.addEventListener("click", function() {
+            frame.removeChild(containerDiv);
+        });
+
+        var titleElement = document.createElement("h2");
+        titleElement.textContent = title;
+
+        var descriptionElement = document.createElement("p");
+        descriptionElement.textContent = description;
+
+        contentContainer.appendChild(titleElement);
+        contentContainer.appendChild(descriptionElement);
+        contentContainer.appendChild(deleteButton); // Add the delete button to the content container
+
+        containerDiv.appendChild(contentContainer);
+
+        frame.appendChild(containerDiv);
+
+        makeDraggable(containerDiv);
     });
-
-    var title = document.createElement("h2");
-    title.textContent = "Button Title";
-
-    var description = document.createElement("p");
-    description.textContent = "This is a custom button with a nice background and description.";
-
-    contentContainer.appendChild(deleteButton);
-    contentContainer.appendChild(title);
-    contentContainer.appendChild(description);
-
-    containerDiv.appendChild(contentContainer);
-
-    frame.appendChild(containerDiv);
-
-    makeDraggable(containerDiv);
-});
 
 
 

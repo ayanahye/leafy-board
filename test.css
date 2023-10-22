@@ -1,6 +1,9 @@
 #mydiv {
     position: absolute;
     z-index: 9;
+    background-color: rgb(31, 60, 127, 0.5);
+    color: white;
+    padding: 10px 0 0 10px;
   }
   
   #mydivheader {
@@ -9,7 +12,7 @@
     font-size: 25px;
     font-weight: bold;
 
-    color: Black;
+    color: white;
   }
 
   html, body {

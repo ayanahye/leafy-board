@@ -136,4 +136,41 @@ a {
     }
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+
+  #submitButton {
+    font-size: 20px;
+    background-color: greenyellow;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Young Serif', serif;
+  }
+  
+  .labelname {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    margin: 0;
+    text-shadow: 2px 2px 5px green;
+  }
+  

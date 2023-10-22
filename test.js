@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var containerDiv = document.createElement("div");
         containerDiv.classList.add("draggable");
         containerDiv.style.position = 'absolute';
-        containerDiv.style.background = 'blue';
+        containerDiv.style.background = "rgb(31, 60, 127, 0.5)";
+
         
         containerDiv.style.display = "flex";
 
